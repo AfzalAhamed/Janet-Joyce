@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "logo nav widget";
+    width: 98.4%;
+    height: 12.3%;
+    background-color: red;
+    position: sticky;
+    top: 0;
+    padding-right: 1.6%;
+}
+
+.logo { 
+    grid-area: logo;
+    
+}
+
+.nav { 
+    grid-area: nav; 
+}
+
+.widget { 
+    grid-area: widget; 
+}
